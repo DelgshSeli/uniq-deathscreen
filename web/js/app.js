@@ -39,13 +39,21 @@ function timer(){
     }
 };
 
-$(function(){
-    $(`#accept_to_die`).click(function(){
+$(function () {
+    $('#accept_to_die').click(function () {
         $.post(`https://${GetParentResourceName()}/accept_to_die`);
-    })
-    $(`#call_emergency`).click(function(){
+    });
+
+    $('#call_emergency').click(function () {
         $.post(`https://${GetParentResourceName()}/call_emergency`);
-        $('#call_emergency').addClass("disabled");
-    })
+        $('#call_emergency').addClass('disabled');
+    });
+
+    // Add this section for the "Call AI Doc" button
+    $('#call_ai_doc').click(function () {
+        console.log("Call AI Doc button clicked"); // Add this line for debugging
+        $.post(`https://${GetParentResourceName()}/call_ai_doc`, JSON.stringify({}));
+    });
+
     $('#wrapper').hide();
-})
+});

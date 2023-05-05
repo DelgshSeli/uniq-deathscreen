@@ -2,10 +2,10 @@ Config = {}
 
 Config.Debug = true
 Config.VersionChecking = true
-Config.Framework = 'esx' -- esx, qbcore
+Config.Framework = 'qbcore' -- esx, qbcore
 Config.UseRPName = true
 Config.Timer = 300 -- in seconds
-Config.PriceForDead = 1000
+Config.PriceForDead = 2000
 Config.RespawnCoords = {
     coords = {
         x = 298.7508,

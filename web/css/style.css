@@ -84,7 +84,7 @@ body {
 	position: relative;
 	min-height: 6vh;
 	top: 66%;
-	left: 39%;
+	left: 30%;
 	padding-left: .8vw;
 	padding-right: .8vw;
 	font-size: 1.5rem;
@@ -97,6 +97,7 @@ body {
 	transition: .4s;
 	margin-right: 20px;
 	text-align: center;
+	min-width: 250px;
 }
 
 #wrapper button:hover {

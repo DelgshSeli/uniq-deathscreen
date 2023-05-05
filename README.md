@@ -31,3 +31,6 @@
 
 ### **DISCLAIMER**
 > If any bugs or problems are found, please report the problem/pull request on GitHub page.
+
+
+This is a fork of Uniqs Deathscreen by Possible, feel free to message on Discord for assistance.

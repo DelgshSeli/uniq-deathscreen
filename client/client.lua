@@ -62,3 +62,9 @@ RegisterNuiCallback("time_expired", function(data)
     SetNuiFocus(false, false)
     TriggerEvent('uniq-deathscreen:client:remove_revive')
 end)
+
+
+RegisterNuiCallback("call_ai_doc", function(data)
+    TriggerServerEvent("hh_aidoc:hhfw:callHelp")
+    print("NUI Callback triggered") -- Add this line for debugging
+end)
