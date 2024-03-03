@@ -1,6 +1,7 @@
 let CurrentTimer = 0;
-var timerId
-let isDead = false
+let timerId;
+let isDead = false;
+let aiDocButtonClicked = false; // Add this flag
 
 window.addEventListener('message', function(event) {
     let item = event.data;
@@ -10,13 +11,16 @@ window.addEventListener('message', function(event) {
             CurrentTimer = 0;
             $('#wrapper').fadeIn();
             $('#call_emergency').removeClass("disabled");
+            // Enable the "CALL AI DOC" button when showing the death screen
+            aiDocButtonClicked = false;
+            $('#call_ai_doc').removeClass("disabled");
         } else {
             CurrentTimer = 0;
             $('#time').text('00:00');
             isDead = false;
             $("#wrapper").fadeOut();
         }
-    } else if (item.type == 'setUPValues'){
+    } else if (item.type == 'setUPValues') {
         if (item.killer != null) killer.innerHTML = item.killer;
         clearTimeout(timerId);
         timerId = setInterval(timer, 1000);
@@ -24,20 +28,20 @@ window.addEventListener('message', function(event) {
     }
 });
 
-function timer(){
+function timer() {
     if (isDead) {
         if (CurrentTimer < 0) {
             $("#wrapper").fadeOut();
             $.post(`https://${GetParentResourceName()}/time_expired`);
             clearTimeout(timerId);
-            CurrentTimer = 0
-            isDead = false
+            CurrentTimer = 0;
+            isDead = false;
         } else {
             $('#time').text(new Date(CurrentTimer * 1000).toISOString().substr(14, 5));
             CurrentTimer = CurrentTimer - 1;
-        };
+        }
     }
-};
+}
 
 $(function () {
     $('#accept_to_die').click(function () {
@@ -49,10 +53,14 @@ $(function () {
         $('#call_emergency').addClass('disabled');
     });
 
-    // Add this section for the "Call AI Doc" button
     $('#call_ai_doc').click(function () {
-        console.log("Call AI Doc button clicked"); // Add this line for debugging
-        $.post(`https://${GetParentResourceName()}/call_ai_doc`, JSON.stringify({}));
+        console.log("Call AI Doc button clicked");
+        if (!aiDocButtonClicked) {
+            $.post(`https://${GetParentResourceName()}/call_ai_doc`, JSON.stringify({}));
+            aiDocButtonClicked = true;
+            // Disable the "CALL AI DOC" button after clicking it
+            $('#call_ai_doc').addClass("disabled");
+        }
     });
 
     $('#wrapper').hide();
