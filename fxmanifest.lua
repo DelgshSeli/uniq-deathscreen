@@ -7,7 +7,7 @@ lua54 'yes'
 --[[RESOURCE INFO]]
 name 'uniq-deathscreen'
 author 'uniq team'
-description 'Death Screen'
+description 'Death Screen - edited by  github.com/DlgshKurd'
 version '1.0.1'
  
 --[[FX DEPENDENCIES]]
