@@ -1,7 +1,7 @@
 Config = {}
 
 Config.Debug = true
-Config.VersionChecking = true
+Config.VersionChecking = false
 Config.Framework = 'qbcore' -- esx, qbcore
 Config.UseRPName = true
 Config.Timer = 300 -- in seconds
