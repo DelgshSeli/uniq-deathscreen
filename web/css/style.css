@@ -72,12 +72,13 @@ body {
 }
 
 #wrapper img {
-	position: absolute;
-	left: 50%;
-	top: 35%;
-	transform: translate(-50%, -50%);
-	width: 5%;
-	height: 10%;
+    position: fixed;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    width: 150px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 150px; /* Set a maximum height if necessary */
 }
 
 #wrapper button {
@@ -109,3 +110,23 @@ body {
 	pointer-events: none;
 	opacity: .8;
 }  
+
+/* Add this style to change the color of the disabled button */
+#call_ai_doc.disabled {
+    background-color: #303030; /* Change this to your desired color */
+    color: #929292; /* Change this to your desired text color */
+    cursor: not-allowed;
+}
+
+/* Add this style to change the color of the normal button */
+#call_ai_doc {
+    background-color: #00d9ff; /* Change this to your desired color */
+    color: white; /* Change this to your desired text color */
+    cursor: pointer;
+}
+
+/* Add this style to disable hover effect when button is disabled */
+#call_ai_doc.disabled:hover {
+     background-color: #424242; /* Change this to your desired color */
+    color: #afafaf; /* Change this to your desired text color */
+}
