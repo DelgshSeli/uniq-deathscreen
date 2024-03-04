@@ -23,5 +23,32 @@ This is an updated version of the Death Screen resource with improvements and fi
 - **Fixed Spam Issue**: The "CALL AI DOC" button now disables after the first click, preventing spam.
 - **Color Enhancements**: Updated button colors for a more visually appealing experience.
 
+### Installation
+
+1. **Install hh_aidoc - (Updated by me):**
+   - Download [hh_aidoc](https://cdn.discordapp.com/attachments/1207783778639155301/1213998548568506428/hh_aidoc.zip?ex=65f78340&is=65e50e40&hm=35a56dc265179c921f4d84d640e362ffbb20d2ba5e5a4c980846e1e25b242f74&) and extract the contents.
+   - Add the `hh_aidoc` resource to your server.cfg:
+     ```cfg
+     ensure hh_aidoc
+     ```
+
+2. **Download Spiderman Car:**
+   - Download [Spiderman Car](https://cdn.discordapp.com/attachments/1207783778639155301/1213991527726981170/488gtb.zip?ex=65f77cb7&is=65e507b7&hm=b9725150ab64a249a90a94ac19b683aa04616dedf03ce65917073dafc8caaa46&) and extract the contents.
+
+3. **Download Death Screen - (Updated by me):**
+   - Clone or download the [Death Screen - Updated](https://github.com/DlgshKurd/uniq-deathscreen.git) repository.
+     ```bash
+     git clone https://github.com/DlgshKurd/uniq-deathscreen.git
+     ```
+
+4. **Configure in server.cfg:**
+   - Add the following lines to your server.cfg, adjusting paths as necessary:
+     ```cfg
+     ensure hh_aidoc
+     ensure 488gtb
+     ensure uniq-deathscreen 
+     ```
+
+Make sure to follow these steps in your server setup. If you encounter any issues or have specific configuration requirements, refer to each resource's documentation for further instructions.
 
 
