@@ -32,8 +32,8 @@ This is an updated version of the Death Screen resource with improvements and fi
    - Download [Spiderman Car](https://cdn.discordapp.com/attachments/1207783778639155301/1213991527726981170/488gtb.zip?ex=65f77cb7&is=65e507b7&hm=b9725150ab64a249a90a94ac19b683aa04616dedf03ce65917073dafc8caaa46&) and extract the contents.
    - Download [Spiderman Skin](https://cdn.discordapp.com/attachments/1207783778639155301/1214002705861709854/SpiderMan.zip?ex=65f78720&is=65e51220&hm=828a6a9c582c25b16a349952a8cea58faa10409b24848aaa5dbc7505522bd676&) and extract the contents.
 
-3. **Download Death Screen - (Updated by me):**
-   - Clone or download the [Death Screen - Updated](https://github.com/DlgshKurd/uniq-deathscreen.git) repository.
+3. **Download Death Screen:**
+   - Clone or download this [Death Screen - Updated](https://github.com/DlgshKurd/uniq-deathscreen.git) repository.
 
 4. **Configure in server.cfg:**
    - Add the following lines to your server.cfg, adjusting paths as necessary:
