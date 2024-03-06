@@ -16,6 +16,8 @@
 ### Preview Resource 
 <a href="https://i.ibb.co/Y0cKd86/outnew.gif" target="_blank">GIF</a>
 
+![image](https://github.com/DelgshSeli/uniq-deathscreen/assets/96995162/d0c7f9db-3bec-45e0-b7b7-acbb3f4162d8)
+
 
 
 ### Overview
