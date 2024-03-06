@@ -7,8 +7,7 @@
   <h3 align="center">Death Screen - Updated FiveM QBCore</h3>
 
   <p align="center">
-    <a href="https://discord.gg/6sKVNEGGvm">Join Our Discord</a>
-    ·
+    <a href="https://discord.gg/6sKVNEGGvm">Join my Discord Server</a>·
   </p>
 </div>
 
