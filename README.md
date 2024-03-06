@@ -14,7 +14,7 @@
 ## About This Resource
 
 ### Preview Resource 
-[GIF](https://i.ibb.co/Y0cKd86/outnew.gif)
+[GIF](https://i.ibb.co/Y0cKd86/outnew.gif){:target="_blank"}
 
 ### Overview
 
